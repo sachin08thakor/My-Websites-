@@ -8,10 +8,22 @@ body {
 }
 
 header {
-  background: #0070f3;
+  background: #0070f3; /* keeps header color */
   color: white;
   padding: 20px;
   text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* or space-between if menu on right */
+  gap: 15px;
+}
+
+.logo {
+  width: 60px; /* adjust as needed */
+  height: auto;
 }
 
 nav a {
