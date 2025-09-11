@@ -11,18 +11,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* space between logo and text */
+  gap: 15 px; /* space between logo and text */
 }
 
 .logo {
-  width: 20px; /* adjust size */
+  width: 30 px; /* adjust size */
   height: auto;
 }
 
 
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 15 px;
   text-decoration: none;
   font-weight: bold;
 }
