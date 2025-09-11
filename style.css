@@ -22,7 +22,8 @@ header {
 }
 
 .logo {
-  width: 450px; /* adjust as needed */
+  max-width: 150px;
+  width: 100%;
   height: auto;
 }
 
