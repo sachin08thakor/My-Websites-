@@ -14,7 +14,7 @@ header {
   text-align: center;
 }
 
-.header-container {
+header-container {
   display: flex;
   align-items: center;
   justify-content: center; /* or space-between if menu on right */
