@@ -5,7 +5,7 @@ body {
   background: #f9f9f9;
   color: #333;
   line-height: 1.6;
-}
+}is 
 
 header {
   background: #0070f3; /* keeps header color */
@@ -22,7 +22,7 @@ header {
 }
 
 .logo {
-  width: 30px; /* adjust as needed */
+  width: 150px; /* adjust as needed */
   height: auto;
 }
 
