@@ -29,7 +29,9 @@ header {
 }
 
 .logo {
-  height: 40px;
+  max-width:850px;
+  width:100%;
+  height:auto;
 }
 
 /* Navigation */
