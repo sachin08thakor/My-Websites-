@@ -5,48 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Page Not Found</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    .error-container {
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .error-container h1 {
-      font-size: 60px;
-      color: #ff4b4b;
-    }
-    .error-container p {
-      font-size: 20px;
-      margin: 20px 0;
-    }
-    .error-container a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #0077ff;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-    }
-    .error-container a:hover {
-      background: #005dc0;
-    }
-  </style>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div class="header-container">
       <a href="index.html"><img src="logo.png" alt="Logo" class="logo"></a>
+
+      <!-- Desktop Menu -->
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button class="menu-btn">☰</button>
+
+      <!-- Mobile Dropdown -->
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="why-us.html">Why Us</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
   </header>
 
-  <div class="error-container">
-    <h1>404</h1>
-    <p>Oops! The page you’re looking for doesn’t exist.</p>
-    <a href="index.html">Go Back Home</a>
-  </div>
+  <!-- 404 Content -->
+  <section>
+    <div class="error-container" style="text-align:center; padding:100px 20px;">
+      <h1 style="font-size:60px; color:#ff4b4b;">404</h1>
+      <p style="font-size:20px; margin:20px 0;">
+        Oops! The page you’re looking for doesn’t exist.
+      </p>
+      <a href="index.html" style="
+        display:inline-block;
+        margin-top:20px;
+        padding:10px 20px;
+        background:#0077ff;
+        color:#fff;
+        text-decoration:none;
+        border-radius:6px;">
+        Go Back Home
+      </a>
+    </div>
+  </section>
 
+  <!-- Footer -->
   <footer>
     <p>© 2025 My Website. All rights reserved.</p>
   </footer>
+
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.querySelector('.menu-btn');
+    const dropdown = document.querySelector('.dropdown-content');
+    menuBtn.addEventListener('click', () => {
+      dropdown.style.display = dropdown.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
 </body>
-</html> 
+</html>
